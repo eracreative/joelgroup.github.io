@@ -5,8 +5,8 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 body {
-    background: url("https://subtlepatterns.com/patterns/sativa.png");
-	background-blend-mode: overlay;
+    background-image: url(https://subtlepatterns.com/patterns/sativa.png) no-repeat 0px 0px;
+    background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
 	padding:0;
@@ -88,6 +88,42 @@ label{
 }
 .banner-3{
 	background:url(../images/3.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height:848px;
+}
+.banner-4{
+	background:url(../images/4.jpg) no-repeat 0px 0px ;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height:848px;
+}
+.banner-5{
+	background:url(../images/5.jpg) no-repeat 0px 0px ;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height:848px;
+}
+.banner-6{
+	background:url(../images/6.jpg) no-repeat 0px 0px ;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height:848px;
+}
+.banner-7{
+	background:url(../images/7.jpg) no-repeat 0px 0px ;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
