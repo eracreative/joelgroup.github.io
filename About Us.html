@@ -50,9 +50,11 @@
 	<link href="//fonts.googleapis.com/css?family=Economica:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Rasa:300,400,500,600,700" rel="stylesheet">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-	<title>JoelGroup - about us</title>
+  <!-- favicons
+	================================================== -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://imgur.com/j8NPx1L" />
+    <link rel="mask-icon" type="" href="https://imgur.com/j8NPx1L" color="#111" />
+    <title>JoelGroup - about us</title>
   
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -241,17 +243,15 @@ svg{
 
 <body translate="no" >
 
- <div class="main-agile">
-		<!-- banner -->
-		<div class="agile-top">
+ <div class="agile-top">
 			<div class="col-xs-6 header-w3l">
 				<ul>
 					<li>
-						<a href="info@1joelgroup.com" data-toggle="modal" data-target="#myModal1">
+						<a href="#" data-toggle="modal" data-target="#myModal1">
 							<span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
 					</li>
 					<li>
-						<a href="info@1joelgroup.com" data-toggle="modal" data-target="#myModal2">
+						<a href="#" data-toggle="modal" data-target="#myModal2">
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
 					</li>
 				</ul>
@@ -263,10 +263,10 @@ svg{
 				</a>
 				<nav>
 					<a href="index.html">Home</a>
-					<a href="about.html" class="active">About Us</a>
-					<a href="#services" class="scroll">Services</a>
-					<a href="#team" class="scroll">Team</a>
-					<a href="portfolio.html" class="active">Portfolio</a>
+					<a href="https://www.joelgroup.press/About%20Us.html" class="active">About Us</a>
+					<a href="https://www.joelgroup.press/Services.html" class="active">Services</a>
+					<a href="https://www.joelgroup.press/Clients.html" class="active">Clients</a>
+					<a href="https://www.joelgroup.press/Portfolio.html" class="active">Portfolio</a>
 					<a href="#contact" class="scroll">Contact Us</a>
 				</nav>
 			</div>
@@ -286,7 +286,7 @@ svg{
 					<div class="main-mailposi">
 						<span class="fa fa-envelope-o" aria-hidden="true"></span>
 					</div>
-					<div class="modal_body_center modal_body_center1">
+					<div class="modal_body_left modal_body_left1">
 						<h3 class="agileinfo_sign">Sign In </h3>
 						<p>
 							Sign In now, Let's start your Design Shopping. Don't have an account?
@@ -325,12 +325,12 @@ svg{
 					<div class="main-mailposi">
 						<span class="fa fa-envelope-o" aria-hidden="true"></span>
 					</div>
-					<div class="modal_body_center modal_body_center1">
+					<div class="modal_body_left modal_body_left1">
 						<h3 class="agileinfo_sign">Sign Up</h3>
 						<p>
 							Come join the JoelGroup! Let's set up your Account.
 						</p>
-						<form action="info@1joelgroup.com" method="post">
+						<form action="#" method="post">
 							<div class="styled-input agile-styled-input-top">
 								<input type="text" placeholder="Name" name="Name" required="">
 							</div>
@@ -346,7 +346,7 @@ svg{
 							<input type="submit" value="Sign Up">
 						</form>
 						<p>
-							<a href="info@1joelgroup.com">By clicking register, I agree to your terms</a>
+							<a href="#">By clicking register, I agree to your terms</a>
 						</p>
 					</div>
 				</div>
@@ -363,7 +363,7 @@ ABOUT JOELGROUP
 <img src="https://image.ibb.co/nk616F/Layer_1_copy_21.png" width="47" height="11" align="center">
 </h1>
 <article>
-  <p><ol>
+  
 Joel Productions Nigeria is a Design, Print production and Corporate Branding Company. <br />
 We take a human-centered design-based approach to helping organizations in the public and private sectors innovate and grow.<br />
 We identify new ways to serve and support people by uncovering latent needs, behaviours, and desires in their organization.<br /> 
@@ -386,8 +386,8 @@ THE SOLUTION<br />
 GROWTH<br />
 RESOURCEFULNESS &<br />
 SPEED
-</p>
-</article>
+</div>
+</article><br /><br />
 <div class="social_icons">
   <div class="square">
     <div class="icons">
@@ -445,7 +445,162 @@ c11 18 20 36 20 39 0 6 -150 87 -161 87 -3 0 -13 -16 -23 -36z"/>
 </div>
   
   
-  
+ <!-- js-scripts -->
+
+	<!-- jquery -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!-- //jquery -->
+
+	<script src="js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+	<!--  light box js -->
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<!-- //light box js-->
+	
+	<!-- stats numscroller-js-file -->
+	<script src="js/numscroller-1.0.js"></script>
+	<!-- //stats numscroller-js-file -->
+	
+	<!-- Baneer-js -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+	    // You can also use "$(window).load(function() {"
+	    $(function () {
+	        // Slideshow 4
+	        $("#slider4").responsiveSlides({
+	            auto: true,
+	            pager: true,
+	            nav: false,
+	            speed: 500,
+	            namespace: "callbacks",
+	            before: function () {
+	                $('.events').append("<li>before event fired.</li>");
+	            },
+	            after: function () {
+	                $('.events').append("<li>after event fired.</li>");
+	            }
+	        });
+	    });
+	</script>
+	<!-- //Baneer-js -->
+
+	<!-- navigation -->
+	<script>
+	    (function ($) {
+	        // Menu Functions
+	        $(document).ready(function () {
+	            $('#menuToggle').click(function (e) {
+	                var $parent = $(this).parent('.menu');
+	                $parent.toggleClass("open");
+	                var navState = $parent.hasClass('open') ? "hide" : "show";
+	                $(this).attr("title", navState + " navigation");
+	                // Set the timeout to the animation length in the CSS.
+	                setTimeout(function () {
+	                    console.log("timeout set");
+	                    $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+	                }, 200);
+	                e.preventDefault();
+	            });
+	        });
+	    })(jQuery);
+	</script>
+	<!-- //navigation -->
+
+	<!-- pop-up(for video popup)-->
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script>
+	    $(document).ready(function () {
+	        $('.popup-with-zoom-anim').magnificPopup({
+	            type: 'inline',
+	            fixedContentPos: false,
+	            fixedBgPos: true,
+	            overflowY: 'auto',
+	            closeBtnInside: true,
+	            preloader: false,
+	            midClick: true,
+	            removalDelay: 300,
+	            mainClass: 'my-mfp-zoom-in'
+	        });
+	    });
+	</script>
+	<!-- //pop-up-box (syllabus section video)-->
+	
+	<!-- video js (background) -->
+	<script src="js/jquery.vide.min.js"></script>
+	<!-- //video js (background) -->
+
+	<!-- smoothscroll -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<!-- //smoothscroll -->
+
+	<!-- password-script -->
+	<script>
+	    window.onload = function () {
+	        document.getElementById("password1").onchange = validatePassword;
+	        document.getElementById("password2").onchange = validatePassword;
+	    }
+	    function validatePassword() {
+	        var pass2 = document.getElementById("password2").value;
+	        var pass1 = document.getElementById("password1").value;
+	        if (pass1 != pass2)
+	            document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+	        else
+	            document.getElementById("password2").setCustomValidity('');
+	        //empty string means no validation error
+	    }
+	</script>
+	<!-- //password-script -->
+
+	<!-- start-smooth-scrolling -->
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script>
+	    jQuery(document).ready(function ($) {
+	        $(".scroll").click(function (event) {
+	            event.preventDefault();
+	            $('html,body').animate({
+	                scrollTop: $(this.hash).offset().top
+	            }, 1000);
+	        });
+	    });
+	</script>
+	<!-- //end-smooth-scrolling -->
+
+	<!-- smooth scrolling-bottom-to-top -->
+	<script>
+	    $(document).ready(function () {
+	        /*
+	        var defaults = {
+	        containerID: 'toTop', // fading element id
+	        containerHoverID: 'toTopHover', // fading element hover id
+	        scrollSpeed: 1200,
+	        easingType: 'linear' 
+	        };
+	        */
+	        $().UItoTop({
+	            easingType: 'easeOutQuart'
+	        });
+	    });
+	</script>
+	<a href="#" id="toTop" style="display: block;">
+		<span id="toTopHover" style="opacity: 1;"> </span>
+	</a>
+	<!-- //smooth scrolling-bottom-to-top -->
+
+	<!-- flexSlider (for testimonials) -->
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script>
+	    $(window).load(function () {
+	        $('.flexslider').flexslider({
+	            animation: "slide",
+	            start: function (slider) {
+	                $('body').removeClass('loading');
+	            }
+	        });
+	    });
+	</script>
+	<!-- //flexSlider (for testimonials) --> 
   
   
 <script async>    (function (s, u, m, o, j, v) { j = u.createElement(m); v = u.getElementsByTagName(m)[0]; j.async = 1; j.src = o; j.dataset.sumoSiteId = 'd3dd751d6af986fcf85d86b6433b0a6991ccd07429788e9836a3e94021b71223'; v.parentNode.insertBefore(j, v) })(window, document, 'script', '//load.sumo.com/');</script>
